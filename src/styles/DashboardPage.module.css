@@ -1,0 +1,74 @@
+.container{
+    height: 450px;
+    margin: auto;
+    width: 75%;
+    overflow: auto;
+}
+
+.heading{
+    font-family: cursive;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.carousal{
+    /* overflow-x: auto; */
+    display: inline-flex;
+    padding: 10px 10px;
+}
+
+/* Scrollbar track */
+.container::-webkit-scrollbar {
+    height: 8px; /* Height for horizontal scrollbars */
+  }
+  
+  /* Scrollbar thumb */
+  .container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  /* Optional: Scrollbar track background */
+  .container::-webkit-scrollbar-track {
+    background-color: transparent; /* Transparent track background */
+  }
+
+.productCard{
+    border-radius: 10px;
+    height: 400px;
+    overflow: hidden;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    background-color: #fff; /* Optional: Set background color for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    transition: all 0.3s ease; /* Smooth transition for shadow on hover */
+}
+
+/* Hover effect */
+.productCard:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Darker and larger shadow on hover */
+    transform: scale(1.05);
+    cursor:pointer;
+
+}
+
+.productImageContainer{
+    height: 150px;
+    width: 100%;
+}
+
+.productImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.productDescription{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
